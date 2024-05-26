@@ -148,3 +148,18 @@ struct CityView: View {
 }
 
 
+struct WetherButton: View {
+    var buttonText: String
+    var bgColor: Color
+    var textColor: Color
+    var body: some View {
+        Text(buttonText)
+            .frame(width: 300,height: 80)
+            .background(bgColor)
+            .foregroundColor(textColor)
+            .font(.system(size: 28,weight: .bold,design: .default))
+            .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+    }
+}
+
+
